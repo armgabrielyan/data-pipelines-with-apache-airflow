@@ -58,6 +58,7 @@ services:
       - logs:/opt/airflow/logs
       - ./dags/custom:/opt/airflow/dags/custom
       - ./dags/chapter7_insideairbnb_pythonoperator.py:/opt/airflow/dags/chapter7_insideairbnb_pythonoperator.py
+      - ./dags/chapter7_insideairbnb.py:/opt/airflow/dags/chapter7_insideairbnb.py
     environment: *airflow_environment
     command: scheduler
 
