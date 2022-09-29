@@ -23,6 +23,6 @@ def _wait_for_supermarket(supermarket_id_):
 wait_for_supermarket_1 = PythonSensor(
     task_id="wait_for_supermarket_1",
     python_callable=_wait_for_supermarket,
-    op_kwargs={"supermarket_id": "supermarket1"},
+    op_kwargs={"supermarket_id_": "supermarket1"},
     dag=dag,
 )
