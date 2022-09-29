@@ -13,7 +13,7 @@ dag1 = DAG(
 dag2 = DAG(
     dag_id="figure_6_20_dag_2",
     start_date=airflow.utils.dates.days_ago(3),
-    schedule_interval="0 18 * * *",
+    schedule_interval="0 16 * * *",
 )
 
 DummyOperator(task_id="copy_to_raw", dag=dag1) >> DummyOperator(
