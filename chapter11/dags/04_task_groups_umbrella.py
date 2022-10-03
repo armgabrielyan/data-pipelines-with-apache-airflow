@@ -32,7 +32,7 @@ def _clean_sales_new(**context):
 
 
 with DAG(
-    dag_id="05_task_groups_umbrella",
+    dag_id="04_task_groups_umbrella",
     start_date=airflow.utils.dates.days_ago(3),
     schedule_interval="@daily",
 ) as dag:
